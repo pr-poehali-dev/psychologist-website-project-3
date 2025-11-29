@@ -157,12 +157,12 @@ const Index = () => {
                 </Button>
               </div>
             </div>
-            <div className="relative animate-scale-in flex justify-center lg:justify-end">
+            <div className="relative animate-scale-in flex justify-start lg:justify-start">
               <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-primary/10 rounded-3xl blur-3xl"></div>
               <img 
                 src="https://cdn.poehali.dev/files/198cdd67-fa51-4c92-b409-7e2fff7c99be.jpg"
                 alt="Авшалом Елена"
-                className="relative rounded-3xl shadow-2xl w-full max-w-md object-cover object-top"
+                className="relative rounded-3xl shadow-2xl w-full max-w-[14rem] object-cover object-top"
               />
             </div>
           </div>
