@@ -413,8 +413,8 @@ const Index = () => {
                       <Icon name="Phone" size={22} className="text-accent" />
                     </div>
                     <div>
-                      <p className="font-medium text-primary">Телефон</p>
-                      <p className="text-muted-foreground">+7 (495) 123-45-67</p>
+                      <p className="font-medium text-primary">Телефон / WhatsApp</p>
+                      <p className="text-muted-foreground">+7 (926) 826-02-33</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -423,7 +423,7 @@ const Index = () => {
                     </div>
                     <div>
                       <p className="font-medium text-primary">Email</p>
-                      <p className="text-muted-foreground">elena.smirnova@psycho.ru</p>
+                      <p className="text-muted-foreground">avshalom.elena@mail.ru</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -433,7 +433,7 @@ const Index = () => {
                     <div>
                       <p className="font-medium text-primary">Адрес кабинета</p>
                       <p className="text-muted-foreground">
-                        Москва, ул. Тверская, д. 12, офис 305
+                        Москва, Бульвар Академика Ландау, д. 3
                       </p>
                     </div>
                   </div>
