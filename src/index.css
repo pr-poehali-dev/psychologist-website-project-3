@@ -129,20 +129,6 @@
   }
 }
 
-@keyframes metamorphosis-float {
-  0%,
-  100% {
-    transform: translateY(0px) scale(1);
-  }
-  50% {
-    transform: translateY(-15px) scale(1.02);
-  }
-}
-
-.metamorphosis-float {
-  animation: metamorphosis-float 6s ease-in-out infinite;
-}
-
 @keyframes butterfly-flutter {
   0%,
   100% {
