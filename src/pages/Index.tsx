@@ -287,19 +287,6 @@ const Index = () => {
           </div>
 
           <div className="space-y-8 mb-16 relative">
-            {/* Metamorphosis journey visualization */}
-            <div className="flex justify-center items-center mb-8 gap-4 px-4">
-              <div className="text-center animate-fade-in">
-                <div className="text-5xl mb-2">🐛</div>
-                <p className="text-xs text-muted-foreground font-medium">Начало</p>
-              </div>
-              <div className="flex-1 h-0.5 bg-gradient-to-r from-accent/50 to-primary/50 max-w-xs"></div>
-              <div className="text-center animate-fade-in">
-                <div className="text-5xl mb-2">🦋</div>
-                <p className="text-xs text-muted-foreground font-medium">Трансформация</p>
-              </div>
-            </div>
-            
             <div className="grid md:grid-cols-4 gap-6">
               {[
                 { num: "1", title: "Запись", desc: "Оставьте заявку удобным способом", emoji: "📝" },
