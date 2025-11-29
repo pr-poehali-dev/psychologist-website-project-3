@@ -56,14 +56,6 @@ const Index = () => {
 
       <section id="home" className="pt-32 pb-20 px-4 md:px-6 relative">
         <div className="container mx-auto">
-          {/* Hero metamorphosis illustration */}
-          <div className="relative w-full mb-0 -mt-8">
-            <img 
-              src="https://cdn.poehali.dev/files/4011afd5-d1a7-44e8-8f74-6c1fb26b741f.jpg"
-              alt="Метаморфоза: гусеница, кокон, бабочка"
-              className="w-full h-32 object-contain object-center opacity-90"
-            />
-          </div>
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
               <Badge variant="secondary" className="text-sm px-4 py-1">
@@ -72,6 +64,14 @@ const Index = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
                 Авшалом Елена
               </h1>
+              {/* Hero metamorphosis illustration */}
+              <div className="relative w-full max-w-md">
+                <img 
+                  src="https://cdn.poehali.dev/files/4011afd5-d1a7-44e8-8f74-6c1fb26b741f.jpg"
+                  alt="Метаморфоза: гусеница, кокон, бабочка"
+                  className="w-full h-auto opacity-80"
+                />
+              </div>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                 За 25 лет научной и практической работы я пришла к фундаментальному выводу: настоящие изменения требуют одновременно глубины и трансформации. В основе моего подхода лежат проверенные классические методы психотерапии — тот самый надежный научный фундамент, который позволяет понять структуру личности и истоки проблем.
                 <br /><br />
