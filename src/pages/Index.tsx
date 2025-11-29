@@ -508,15 +508,24 @@ const Index = () => {
         </div>
       </footer>
 
-      <a
-        href="https://wa.me/79268260233"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full shadow-2xl flex items-center justify-center transition-all hover:scale-110 animate-fade-in group"
-        aria-label="Написать в WhatsApp"
-      >
-        <Icon name="MessageCircle" size={28} className="group-hover:scale-110 transition-transform" />
-      </a>
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
+        <button
+          onClick={() => scrollToSection("contact")}
+          className="w-16 h-16 bg-accent hover:bg-accent/90 text-white rounded-full shadow-2xl flex items-center justify-center transition-all hover:scale-110 animate-fade-in group"
+          aria-label="Записаться на консультацию"
+        >
+          <Icon name="Calendar" size={28} className="group-hover:scale-110 transition-transform" />
+        </button>
+        <a
+          href="https://wa.me/79268260233"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-16 h-16 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full shadow-2xl flex items-center justify-center transition-all hover:scale-110 animate-fade-in group"
+          aria-label="Написать в WhatsApp"
+        >
+          <Icon name="MessageCircle" size={28} className="group-hover:scale-110 transition-transform" />
+        </a>
+      </div>
     </div>
   );
 };
