@@ -60,7 +60,7 @@ const Index = () => {
           <div className="relative flex justify-between items-center mb-12 animate-fade-in max-w-6xl mx-auto" style={{height: '200px'}}>
             <div className="w-1/4 flex justify-start pl-8">
               <img 
-                src="https://cdn.poehali.dev/projects/669710ca-3a7c-4e6d-bbf6-6df17776da53/files/992ffe1e-f5eb-4ccc-9956-cf8c58ef734e.jpg"
+                src="https://cdn.poehali.dev/projects/669710ca-3a7c-4e6d-bbf6-6df17776da53/files/eb4d79f5-57cc-4059-8190-af9d02d4d4d5.jpg"
                 alt="Гусеница"
                 className="w-32 h-32 object-contain caterpillar-crawl"
               />
