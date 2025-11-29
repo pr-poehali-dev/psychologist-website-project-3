@@ -127,7 +127,7 @@ const Index = () => {
             </div>
             <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-accent/30 via-primary/30 to-accent/30 -z-10"></div>
           </div>
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-4 items-center">
             <div className="space-y-6 animate-fade-in">
               <Badge variant="secondary" className="text-sm px-4 py-1">
                 Кандидат психологических наук
