@@ -232,7 +232,7 @@ const Index = () => {
               />
             </div>
             <div className="space-y-6 animate-fade-in">
-              <h2 className="text-3xl md:text-4xl font-bold text-primary">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary">Обо мне</h2>
               <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed">
                 <p>
                   За 25 лет практики я помогла более 5000 людям найти выход из сложных 
