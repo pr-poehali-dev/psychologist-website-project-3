@@ -65,27 +65,50 @@ const Index = () => {
           {/* Hero metamorphosis illustration */}
           <div className="relative flex justify-between items-center mb-12 animate-fade-in max-w-6xl mx-auto" style={{height: '200px'}}>
             <div className="w-1/4 flex justify-start">
-              <svg className="w-24 h-24 text-accent caterpillar-crawl" viewBox="0 0 100 100" fill="currentColor">
-                <circle cx="20" cy="50" r="12"/>
-                <circle cx="38" cy="50" r="14"/>
-                <circle cx="58" cy="50" r="16"/>
-                <circle cx="80" cy="50" r="12"/>
+              <svg className="w-32 h-32 text-accent caterpillar-crawl" viewBox="0 0 120 60" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <circle cx="15" cy="30" r="8" strokeWidth="1.2"/>
+                <circle cx="30" cy="30" r="9" strokeWidth="1.2"/>
+                <circle cx="47" cy="30" r="10" strokeWidth="1.2"/>
+                <circle cx="65" cy="30" r="10" strokeWidth="1.2"/>
+                <circle cx="83" cy="30" r="9" strokeWidth="1.2"/>
+                <circle cx="98" cy="30" r="8" strokeWidth="1.2"/>
+                <line x1="10" y1="22" x2="8" y2="15" strokeWidth="1"/>
+                <line x1="20" y1="22" x2="18" y2="15" strokeWidth="1"/>
+                <circle cx="12" cy="27" r="1.5" fill="currentColor"/>
+                <circle cx="18" cy="27" r="1.5" fill="currentColor"/>
+                <path d="M 10 33 Q 15 36 20 33" strokeWidth="1" fill="none"/>
               </svg>
             </div>
             <div className="w-2/4 flex justify-center">
-              <svg className="h-48 w-auto text-primary opacity-80" viewBox="0 0 100 200" fill="currentColor">
-                <ellipse cx="50" cy="100" rx="30" ry="80"/>
-                <path d="M 50 20 Q 40 50 50 80 Q 60 50 50 20" opacity="0.3"/>
-                <path d="M 50 120 Q 40 150 50 180 Q 60 150 50 120" opacity="0.3"/>
+              <svg className="h-48 w-auto text-primary opacity-90" viewBox="0 0 80 200" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <ellipse cx="40" cy="100" rx="25" ry="75" strokeWidth="1.5"/>
+                <path d="M 40 25 Q 45 40 40 55" strokeWidth="1" opacity="0.6"/>
+                <path d="M 40 55 Q 35 70 40 85" strokeWidth="1" opacity="0.6"/>
+                <path d="M 40 85 Q 45 100 40 115" strokeWidth="1" opacity="0.6"/>
+                <path d="M 40 115 Q 35 130 40 145" strokeWidth="1" opacity="0.6"/>
+                <path d="M 40 145 Q 45 160 40 175" strokeWidth="1" opacity="0.6"/>
+                <ellipse cx="40" cy="40" rx="8" ry="12" strokeWidth="0.8" opacity="0.4"/>
+                <ellipse cx="40" cy="70" rx="10" ry="15" strokeWidth="0.8" opacity="0.4"/>
+                <ellipse cx="40" cy="100" rx="12" ry="18" strokeWidth="0.8" opacity="0.4"/>
+                <ellipse cx="40" cy="130" rx="10" ry="15" strokeWidth="0.8" opacity="0.4"/>
+                <ellipse cx="40" cy="160" rx="8" ry="12" strokeWidth="0.8" opacity="0.4"/>
               </svg>
             </div>
             <div className="w-1/4 flex justify-end">
-              <svg className="w-24 h-24 text-accent butterfly-fly" viewBox="0 0 100 100" fill="currentColor">
-                <ellipse cx="50" cy="50" rx="4" ry="12"/>
-                <path d="M 50 40 Q 20 30 15 50 Q 20 70 50 60 Z" className="wing-left"/>
-                <path d="M 50 40 Q 80 30 85 50 Q 80 70 50 60 Z" className="wing-right"/>
-                <path d="M 50 60 Q 25 65 20 80 Q 30 85 50 75 Z" className="wing-left"/>
-                <path d="M 50 60 Q 75 65 80 80 Q 70 85 50 75 Z" className="wing-right"/>
+              <svg className="w-32 h-32 text-accent butterfly-fly" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
+                <ellipse cx="50" cy="50" rx="2" ry="15" fill="currentColor"/>
+                <line x1="50" y1="35" x2="48" y2="28" strokeWidth="1"/>
+                <line x1="50" y1="35" x2="52" y2="28" strokeWidth="1"/>
+                <circle cx="48" cy="27" r="1.5" fill="currentColor"/>
+                <circle cx="52" cy="27" r="1.5" fill="currentColor"/>
+                <path d="M 50 38 Q 25 28 18 42 Q 15 52 22 60 Q 30 65 42 58 Q 48 50 50 45 Z" className="wing-left" strokeWidth="1.2"/>
+                <path d="M 50 38 Q 75 28 82 42 Q 85 52 78 60 Q 70 65 58 58 Q 52 50 50 45 Z" className="wing-right" strokeWidth="1.2"/>
+                <path d="M 50 52 Q 28 58 20 70 Q 18 78 25 82 Q 35 84 45 75 Q 49 65 50 58 Z" className="wing-left" strokeWidth="1.2"/>
+                <path d="M 50 52 Q 72 58 80 70 Q 82 78 75 82 Q 65 84 55 75 Q 51 65 50 58 Z" className="wing-right" strokeWidth="1.2"/>
+                <ellipse cx="30" cy="48" rx="6" ry="8" strokeWidth="0.8" opacity="0.5"/>
+                <ellipse cx="70" cy="48" rx="6" ry="8" strokeWidth="0.8" opacity="0.5"/>
+                <ellipse cx="32" cy="72" rx="5" ry="6" strokeWidth="0.8" opacity="0.5"/>
+                <ellipse cx="68" cy="72" rx="5" ry="6" strokeWidth="0.8" opacity="0.5"/>
               </svg>
             </div>
             <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-accent/30 via-primary/30 to-accent/30 -z-10"></div>
