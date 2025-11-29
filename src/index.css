@@ -197,3 +197,48 @@
   animation: wing-flap 0.5s ease-in-out infinite;
   animation-delay: 0.1s;
 }
+
+@keyframes butterfly-grow {
+  0% {
+    width: 4rem;
+    height: 4rem;
+    transform: translateX(0px) translateY(0px);
+  }
+  25% {
+    width: 6rem;
+    height: 6rem;
+    transform: translateX(30px) translateY(-10px);
+  }
+  50% {
+    width: 12rem;
+    height: 12rem;
+    transform: translateX(60px) translateY(0px);
+  }
+  75% {
+    width: 6rem;
+    height: 6rem;
+    transform: translateX(30px) translateY(10px);
+  }
+  100% {
+    width: 4rem;
+    height: 4rem;
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+.butterfly-fly-grow {
+  width: 4rem;
+  height: 4rem;
+  animation: butterfly-grow 8s ease-in-out infinite;
+}
+
+.butterfly-fly-grow .wing-left {
+  transform-origin: 50% 50%;
+  animation: wing-flap 0.5s ease-in-out infinite;
+}
+
+.butterfly-fly-grow .wing-right {
+  transform-origin: 50% 50%;
+  animation: wing-flap 0.5s ease-in-out infinite;
+  animation-delay: 0.1s;
+}

@@ -20,13 +20,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background relative overflow-x-hidden">
-      {/* Decorative metamorphosis symbols */}
-      <div className="fixed top-20 left-0 w-32 h-32 opacity-10 pointer-events-none z-0 animate-float">
-        <img src="https://cdn.poehali.dev/projects/669710ca-3a7c-4e6d-bbf6-6df17776da53/files/d67868e0-d827-473b-a7ec-4c6958928b41.jpg" alt="" className="w-full h-full object-contain" />
-      </div>
-      <div className="fixed bottom-20 right-0 w-40 h-40 opacity-10 pointer-events-none z-0 animate-butterfly">
-        <img src="https://cdn.poehali.dev/projects/669710ca-3a7c-4e6d-bbf6-6df17776da53/files/22bc8d26-7eb4-469e-bea8-45a543fe041d.jpg" alt="" className="w-full h-full object-contain" />
-      </div>
+
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
@@ -65,7 +59,7 @@ const Index = () => {
           {/* Hero metamorphosis illustration */}
           <div className="relative flex justify-between items-center mb-12 animate-fade-in max-w-6xl mx-auto" style={{height: '200px'}}>
             <div className="w-1/4 flex justify-start">
-              <svg className="w-32 h-32 text-accent caterpillar-crawl" viewBox="0 0 120 60" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <svg className="w-32 h-32 text-accent caterpillar-crawl" viewBox="0 0 120 60" fill="none" stroke="currentColor" strokeWidth="1.5" style={{transform: 'scaleX(-1)'}}>
                 <circle cx="15" cy="30" r="8" strokeWidth="1.2"/>
                 <circle cx="30" cy="30" r="9" strokeWidth="1.2"/>
                 <circle cx="47" cy="30" r="10" strokeWidth="1.2"/>
@@ -80,7 +74,7 @@ const Index = () => {
               </svg>
             </div>
             <div className="w-2/4 flex justify-center">
-              <svg className="h-48 w-auto text-primary opacity-90" viewBox="0 0 80 200" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <svg className="h-48 w-auto text-accent opacity-90" viewBox="0 0 80 200" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <ellipse cx="40" cy="100" rx="25" ry="75" strokeWidth="1.5"/>
                 <path d="M 40 25 Q 45 40 40 55" strokeWidth="1" opacity="0.6"/>
                 <path d="M 40 55 Q 35 70 40 85" strokeWidth="1" opacity="0.6"/>
@@ -95,20 +89,40 @@ const Index = () => {
               </svg>
             </div>
             <div className="w-1/4 flex justify-end">
-              <svg className="w-32 h-32 text-accent butterfly-fly" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-                <ellipse cx="50" cy="50" rx="2" ry="15" fill="currentColor"/>
-                <line x1="50" y1="35" x2="48" y2="28" strokeWidth="1"/>
-                <line x1="50" y1="35" x2="52" y2="28" strokeWidth="1"/>
-                <circle cx="48" cy="27" r="1.5" fill="currentColor"/>
-                <circle cx="52" cy="27" r="1.5" fill="currentColor"/>
-                <path d="M 50 38 Q 25 28 18 42 Q 15 52 22 60 Q 30 65 42 58 Q 48 50 50 45 Z" className="wing-left" strokeWidth="1.2"/>
-                <path d="M 50 38 Q 75 28 82 42 Q 85 52 78 60 Q 70 65 58 58 Q 52 50 50 45 Z" className="wing-right" strokeWidth="1.2"/>
-                <path d="M 50 52 Q 28 58 20 70 Q 18 78 25 82 Q 35 84 45 75 Q 49 65 50 58 Z" className="wing-left" strokeWidth="1.2"/>
-                <path d="M 50 52 Q 72 58 80 70 Q 82 78 75 82 Q 65 84 55 75 Q 51 65 50 58 Z" className="wing-right" strokeWidth="1.2"/>
-                <ellipse cx="30" cy="48" rx="6" ry="8" strokeWidth="0.8" opacity="0.5"/>
-                <ellipse cx="70" cy="48" rx="6" ry="8" strokeWidth="0.8" opacity="0.5"/>
-                <ellipse cx="32" cy="72" rx="5" ry="6" strokeWidth="0.8" opacity="0.5"/>
-                <ellipse cx="68" cy="72" rx="5" ry="6" strokeWidth="0.8" opacity="0.5"/>
+              <svg className="butterfly-fly-grow" viewBox="0 0 100 100" fill="none" stroke="#8B5CF6" strokeWidth="1">
+                <ellipse cx="50" cy="50" rx="2" ry="15" fill="#8B5CF6"/>
+                <line x1="50" y1="35" x2="48" y2="28" strokeWidth="1" stroke="#8B5CF6"/>
+                <line x1="50" y1="35" x2="52" y2="28" strokeWidth="1" stroke="#8B5CF6"/>
+                <circle cx="48" cy="27" r="1.5" fill="#8B5CF6"/>
+                <circle cx="52" cy="27" r="1.5" fill="#8B5CF6"/>
+                <path d="M 50 38 Q 25 28 18 42 Q 15 52 22 60 Q 30 65 42 58 Q 48 50 50 45 Z" className="wing-left" strokeWidth="1.2" fill="url(#gradient1)"/>
+                <path d="M 50 38 Q 75 28 82 42 Q 85 52 78 60 Q 70 65 58 58 Q 52 50 50 45 Z" className="wing-right" strokeWidth="1.2" fill="url(#gradient2)"/>
+                <path d="M 50 52 Q 28 58 20 70 Q 18 78 25 82 Q 35 84 45 75 Q 49 65 50 58 Z" className="wing-left" strokeWidth="1.2" fill="url(#gradient3)"/>
+                <path d="M 50 52 Q 72 58 80 70 Q 82 78 75 82 Q 65 84 55 75 Q 51 65 50 58 Z" className="wing-right" strokeWidth="1.2" fill="url(#gradient4)"/>
+                <ellipse cx="30" cy="48" rx="6" ry="8" strokeWidth="0.8" fill="#F59E0B" opacity="0.7"/>
+                <ellipse cx="70" cy="48" rx="6" ry="8" strokeWidth="0.8" fill="#F59E0B" opacity="0.7"/>
+                <ellipse cx="32" cy="72" rx="5" ry="6" strokeWidth="0.8" fill="#EC4899" opacity="0.7"/>
+                <ellipse cx="68" cy="72" rx="5" ry="6" strokeWidth="0.8" fill="#EC4899" opacity="0.7"/>
+                <defs>
+                  <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style={{stopColor: '#8B5CF6', stopOpacity: 0.8}} />
+                    <stop offset="50%" style={{stopColor: '#EC4899', stopOpacity: 0.8}} />
+                    <stop offset="100%" style={{stopColor: '#F59E0B', stopOpacity: 0.8}} />
+                  </linearGradient>
+                  <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style={{stopColor: '#F59E0B', stopOpacity: 0.8}} />
+                    <stop offset="50%" style={{stopColor: '#EC4899', stopOpacity: 0.8}} />
+                    <stop offset="100%" style={{stopColor: '#8B5CF6', stopOpacity: 0.8}} />
+                  </linearGradient>
+                  <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style={{stopColor: '#10B981', stopOpacity: 0.7}} />
+                    <stop offset="100%" style={{stopColor: '#06B6D4', stopOpacity: 0.7}} />
+                  </linearGradient>
+                  <linearGradient id="gradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style={{stopColor: '#06B6D4', stopOpacity: 0.7}} />
+                    <stop offset="100%" style={{stopColor: '#10B981', stopOpacity: 0.7}} />
+                  </linearGradient>
+                </defs>
               </svg>
             </div>
             <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-accent/30 via-primary/30 to-accent/30 -z-10"></div>
