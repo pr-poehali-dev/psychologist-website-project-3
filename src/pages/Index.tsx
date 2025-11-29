@@ -61,15 +61,15 @@ const Index = () => {
               <Badge variant="secondary" className="text-sm px-4 py-1">
                 Кандидат психологических наук
               </Badge>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
-                Авшалом Елена
-              </h1>
-              {/* Hero metamorphosis illustration */}
-              <div className="relative w-full max-w-md">
+              <div className="flex items-center gap-6">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
+                  Авшалом Елена
+                </h1>
+                {/* Hero metamorphosis illustration */}
                 <img 
                   src="https://cdn.poehali.dev/files/4011afd5-d1a7-44e8-8f74-6c1fb26b741f.jpg"
                   alt="Метаморфоза: гусеница, кокон, бабочка"
-                  className="w-full h-auto opacity-80"
+                  className="w-64 h-auto opacity-80"
                 />
               </div>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
