@@ -54,7 +54,7 @@ const Index = () => {
         </div>
       </nav>
 
-      <section id="home" className="pt-32 pb-20 px-6 relative">
+      <section id="home" className="pt-32 pb-20 px-4 md:px-6 relative">
         <div className="container mx-auto">
           {/* Hero metamorphosis illustration */}
           <div className="relative flex justify-between items-center mb-12 animate-fade-in max-w-6xl mx-auto" style={{height: '200px'}}>
@@ -132,10 +132,10 @@ const Index = () => {
               <Badge variant="secondary" className="text-sm px-4 py-1">
                 Кандидат психологических наук
               </Badge>
-              <h1 className="text-5xl lg:text-6xl font-bold text-primary leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
                 Авшалом Елена
               </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                 Психолог с 25-летним стажем. Помогаю людям пройти путь трансформации — 
                 от кокона к свободе, через научно обоснованные методы терапии.
               </p>
@@ -169,8 +169,8 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-secondary/30">
-        <div className="container mx-auto px-6">
+      <section className="py-16 md:py-20 bg-secondary/30">
+        <div className="container mx-auto px-4 md:px-6 max-w-6xl">
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { icon: "Award", title: "25 лет опыта", desc: "Более 5000 успешных консультаций" },
@@ -191,11 +191,11 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6">
+      <section className="py-16 md:py-20 px-4 md:px-6">
         <div className="container mx-auto">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl font-bold text-primary mb-4">С какими запросами я работаю</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">С какими запросами я работаю</h2>
+            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
               Специализируюсь на решении сложных жизненных ситуаций с применением 
               современных психотерапевтических методик
             </p>
@@ -221,19 +221,19 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="about" className="py-20 px-6 bg-secondary/30">
+      <section id="about" className="py-16 md:py-20 px-4 md:px-6 bg-secondary/30">
         <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-scale-in">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="animate-scale-in flex justify-center">
               <img 
                 src="https://cdn.poehali.dev/projects/669710ca-3a7c-4e6d-bbf6-6df17776da53/files/41d2766b-b189-4bd1-850a-aad1373a275d.jpg"
                 alt="Кабинет психолога"
-                className="rounded-3xl shadow-2xl w-full object-cover"
+                className="rounded-3xl shadow-2xl w-full max-w-md object-cover"
               />
             </div>
             <div className="space-y-6 animate-fade-in">
-              <h2 className="text-4xl font-bold text-primary">Обо мне</h2>
-              <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary">
+              <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed">
                 <p>
                   За 25 лет практики я помогла более 5000 людям найти выход из сложных 
                   жизненных ситуаций. Моя специализация — работа с глубинными запросами, 
