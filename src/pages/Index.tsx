@@ -23,7 +23,7 @@ const Index = () => {
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <h2 className="text-2xl font-semibold text-primary">Елена Викторовна</h2>
+            <h2 className="text-2xl font-semibold text-primary">Авшалом Елена</h2>
             <div className="hidden md:flex gap-8">
               {[
                 { name: "Главная", id: "home" },
@@ -61,7 +61,7 @@ const Index = () => {
                 Кандидат психологических наук
               </Badge>
               <h1 className="text-5xl lg:text-6xl font-bold text-primary leading-tight">
-                Елена Викторовна Смирнова
+                Авшалом Елена
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
                 Психолог с 25-летним стажем. Помогаю вернуть гармонию в жизнь, 
@@ -88,8 +88,8 @@ const Index = () => {
             <div className="relative animate-scale-in">
               <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-primary/10 rounded-3xl blur-3xl"></div>
               <img 
-                src="https://cdn.poehali.dev/projects/669710ca-3a7c-4e6d-bbf6-6df17776da53/files/f83c9e3e-ef9a-499e-8680-f28cb05e6e39.jpg"
-                alt="Елена Викторовна Смирнова"
+                src="https://cdn.poehali.dev/files/198cdd67-fa51-4c92-b409-7e2fff7c99be.jpg"
+                alt="Авшалом Елена"
                 className="relative rounded-3xl shadow-2xl w-full object-cover"
               />
             </div>
@@ -474,7 +474,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h3 className="text-2xl font-semibold mb-4">Елена Викторовна</h3>
+              <h3 className="text-2xl font-semibold mb-4">Авшалом Елена</h3>
               <p className="text-white/80 text-sm">
                 Психолог, кандидат наук.<br />
                 Помогаю найти путь к гармонии.
@@ -503,7 +503,7 @@ const Index = () => {
             </div>
           </div>
           <div className="pt-8 border-t border-white/20 text-center text-sm text-white/60">
-            <p>© 2024 Елена Викторовна Смирнова. Все права защищены.</p>
+            <p>© 2024 Авшалом Елена. Все права защищены.</p>
           </div>
         </div>
       </footer>
