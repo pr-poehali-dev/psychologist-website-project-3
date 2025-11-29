@@ -373,28 +373,44 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             <Card className="shadow-xl animate-scale-in">
               <CardContent className="pt-8 pb-8">
-                <form className="space-y-6">
+                <form 
+                  className="space-y-6"
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    const formData = new FormData(e.currentTarget);
+                    const name = formData.get('name');
+                    const phone = formData.get('phone');
+                    const email = formData.get('email');
+                    const message = formData.get('message');
+                    
+                    const text = `Новая заявка с сайта!\n\nИмя: ${name}\nТелефон: ${phone}\nEmail: ${email}\nЗапрос: ${message}`;
+                    const whatsappUrl = `https://wa.me/79268260233?text=${encodeURIComponent(text)}`;
+                    window.open(whatsappUrl, '_blank');
+                  }}
+                >
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-primary">Ваше имя</label>
-                    <Input placeholder="Как к вам обращаться?" className="h-12" />
+                    <Input name="name" placeholder="Как к вам обращаться?" className="h-12" required />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-primary">Телефон</label>
-                    <Input placeholder="+7 (___) ___-__-__" className="h-12" />
+                    <Input name="phone" placeholder="+7 (___) ___-__-__" className="h-12" required />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-primary">Email</label>
-                    <Input type="email" placeholder="your@email.com" className="h-12" />
+                    <Input name="email" type="email" placeholder="your@email.com" className="h-12" required />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-primary">Краткое описание запроса</label>
                     <Textarea 
+                      name="message"
                       placeholder="Расскажите, с чем хотели бы поработать..."
                       className="min-h-32 resize-none"
+                      required
                     />
                   </div>
-                  <Button className="w-full h-12 bg-accent hover:bg-accent/90 text-base">
-                    Отправить заявку
+                  <Button type="submit" className="w-full h-12 bg-accent hover:bg-accent/90 text-base">
+                    Отправить через WhatsApp
                     <Icon name="Send" className="ml-2" size={18} />
                   </Button>
                   <p className="text-xs text-muted-foreground text-center">
