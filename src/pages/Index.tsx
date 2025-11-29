@@ -59,19 +59,11 @@ const Index = () => {
           {/* Hero metamorphosis illustration */}
           <div className="relative flex justify-between items-center mb-12 animate-fade-in max-w-6xl mx-auto" style={{height: '200px'}}>
             <div className="w-1/4 flex justify-start pl-8">
-              <svg className="w-32 h-32 text-accent caterpillar-crawl" viewBox="0 0 120 60" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <circle cx="98" cy="30" r="8" strokeWidth="1.2"/>
-                <circle cx="83" cy="30" r="9" strokeWidth="1.2"/>
-                <circle cx="65" cy="30" r="10" strokeWidth="1.2"/>
-                <circle cx="47" cy="30" r="10" strokeWidth="1.2"/>
-                <circle cx="30" cy="30" r="9" strokeWidth="1.2"/>
-                <circle cx="15" cy="30" r="8" strokeWidth="1.2"/>
-                <line x1="103" y1="22" x2="105" y2="15" strokeWidth="1"/>
-                <line x1="93" y1="22" x2="91" y2="15" strokeWidth="1"/>
-                <circle cx="101" cy="27" r="1.5" fill="currentColor"/>
-                <circle cx="95" cy="27" r="1.5" fill="currentColor"/>
-                <path d="M 103 33 Q 98 36 93 33" strokeWidth="1" fill="none"/>
-              </svg>
+              <img 
+                src="https://cdn.poehali.dev/projects/669710ca-3a7c-4e6d-bbf6-6df17776da53/files/992ffe1e-f5eb-4ccc-9956-cf8c58ef734e.jpg"
+                alt="Гусеница"
+                className="w-32 h-32 object-contain caterpillar-crawl"
+              />
             </div>
             <div className="w-2/4 flex justify-center">
               <svg className="h-48 w-auto text-accent opacity-90" viewBox="0 0 80 200" fill="none" stroke="currentColor" strokeWidth="1.5">
