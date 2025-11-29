@@ -61,7 +61,7 @@ const Index = () => {
             <img 
               src="https://cdn.poehali.dev/files/4011afd5-d1a7-44e8-8f74-6c1fb26b741f.jpg"
               alt="Метаморфоза: гусеница, кокон, бабочка"
-              className="w-full h-24 object-cover object-center opacity-90"
+              className="w-full h-32 object-contain object-center opacity-90"
             />
           </div>
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
