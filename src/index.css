@@ -135,10 +135,65 @@
   }
 }
 
+@keyframes caterpillar-crawl {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(40px);
+  }
+}
+
+@keyframes butterfly-flight {
+  0%,
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+  25% {
+    transform: translateX(30px) translateY(-10px);
+  }
+  50% {
+    transform: translateX(60px) translateY(0px);
+  }
+  75% {
+    transform: translateX(30px) translateY(10px);
+  }
+}
+
+@keyframes wing-flap {
+  0%,
+  100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0.7);
+  }
+}
+
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
 
 .animate-butterfly {
   animation: butterfly-flutter 4s ease-in-out infinite;
+}
+
+.caterpillar-crawl {
+  animation: caterpillar-crawl 6s ease-in-out infinite;
+}
+
+.butterfly-fly {
+  animation: butterfly-flight 8s ease-in-out infinite;
+}
+
+.butterfly-fly .wing-left {
+  transform-origin: 50% 50%;
+  animation: wing-flap 0.5s ease-in-out infinite;
+}
+
+.butterfly-fly .wing-right {
+  transform-origin: 50% 50%;
+  animation: wing-flap 0.5s ease-in-out infinite;
+  animation-delay: 0.1s;
 }

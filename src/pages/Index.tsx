@@ -65,17 +65,28 @@ const Index = () => {
           {/* Hero metamorphosis illustration */}
           <div className="relative flex justify-between items-center mb-12 animate-fade-in max-w-6xl mx-auto" style={{height: '200px'}}>
             <div className="w-1/4 flex justify-start">
-              <div className="text-9xl opacity-70">🐛</div>
+              <svg className="w-24 h-24 text-accent caterpillar-crawl" viewBox="0 0 100 100" fill="currentColor">
+                <circle cx="20" cy="50" r="12"/>
+                <circle cx="38" cy="50" r="14"/>
+                <circle cx="58" cy="50" r="16"/>
+                <circle cx="80" cy="50" r="12"/>
+              </svg>
             </div>
             <div className="w-2/4 flex justify-center">
-              <img 
-                src="https://cdn.poehali.dev/projects/669710ca-3a7c-4e6d-bbf6-6df17776da53/files/d67868e0-d827-473b-a7ec-4c6958928b41.jpg" 
-                alt="Кокон"
-                className="h-48 w-auto object-contain opacity-80"
-              />
+              <svg className="h-48 w-auto text-primary opacity-80" viewBox="0 0 100 200" fill="currentColor">
+                <ellipse cx="50" cy="100" rx="30" ry="80"/>
+                <path d="M 50 20 Q 40 50 50 80 Q 60 50 50 20" opacity="0.3"/>
+                <path d="M 50 120 Q 40 150 50 180 Q 60 150 50 120" opacity="0.3"/>
+              </svg>
             </div>
             <div className="w-1/4 flex justify-end">
-              <div className="text-9xl opacity-70 animate-butterfly">🦋</div>
+              <svg className="w-24 h-24 text-accent butterfly-fly" viewBox="0 0 100 100" fill="currentColor">
+                <ellipse cx="50" cy="50" rx="4" ry="12"/>
+                <path d="M 50 40 Q 20 30 15 50 Q 20 70 50 60 Z" className="wing-left"/>
+                <path d="M 50 40 Q 80 30 85 50 Q 80 70 50 60 Z" className="wing-right"/>
+                <path d="M 50 60 Q 25 65 20 80 Q 30 85 50 75 Z" className="wing-left"/>
+                <path d="M 50 60 Q 75 65 80 80 Q 70 85 50 75 Z" className="wing-right"/>
+              </svg>
             </div>
             <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-accent/30 via-primary/30 to-accent/30 -z-10"></div>
           </div>
