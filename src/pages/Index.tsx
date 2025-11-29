@@ -19,7 +19,14 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background relative">
+    <div className="min-h-screen bg-background relative overflow-x-hidden">
+      {/* Decorative metamorphosis symbols */}
+      <div className="fixed top-20 left-0 w-32 h-32 opacity-10 pointer-events-none z-0 animate-float">
+        <img src="https://cdn.poehali.dev/projects/669710ca-3a7c-4e6d-bbf6-6df17776da53/files/d67868e0-d827-473b-a7ec-4c6958928b41.jpg" alt="" className="w-full h-full object-contain" />
+      </div>
+      <div className="fixed bottom-20 right-0 w-40 h-40 opacity-10 pointer-events-none z-0 animate-butterfly">
+        <img src="https://cdn.poehali.dev/projects/669710ca-3a7c-4e6d-bbf6-6df17776da53/files/22bc8d26-7eb4-469e-bea8-45a543fe041d.jpg" alt="" className="w-full h-full object-contain" />
+      </div>
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
@@ -53,8 +60,16 @@ const Index = () => {
         </div>
       </nav>
 
-      <section id="home" className="pt-32 pb-20 px-6">
+      <section id="home" className="pt-32 pb-20 px-6 relative">
         <div className="container mx-auto">
+          {/* Hero metamorphosis illustration */}
+          <div className="flex justify-center mb-12 animate-fade-in">
+            <img 
+              src="https://cdn.poehali.dev/projects/669710ca-3a7c-4e6d-bbf6-6df17776da53/files/6b0354e9-3f73-496c-9f6e-d2cc2d79fd42.jpg" 
+              alt="Путь трансформации"
+              className="w-full max-w-2xl h-auto opacity-80"
+            />
+          </div>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
               <Badge variant="secondary" className="text-sm px-4 py-1">
@@ -64,8 +79,8 @@ const Index = () => {
                 Авшалом Елена
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Психолог с 25-летним стажем. Помогаю вернуть гармонию в жизнь, 
-                отношения и профессию через научно обоснованные методы терапии.
+                Психолог с 25-летним стажем. Помогаю людям пройти путь трансформации — 
+                от кокона к свободе, через научно обоснованные методы терапии.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button 
@@ -272,17 +287,30 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="space-y-8 mb-16">
+          <div className="space-y-8 mb-16 relative">
+            {/* Metamorphosis journey visualization */}
+            <div className="flex justify-center items-center mb-8 gap-4 px-4">
+              <div className="text-center animate-fade-in">
+                <div className="text-5xl mb-2">🐛</div>
+                <p className="text-xs text-muted-foreground font-medium">Начало</p>
+              </div>
+              <div className="flex-1 h-0.5 bg-gradient-to-r from-accent/50 to-primary/50 max-w-xs"></div>
+              <div className="text-center animate-fade-in">
+                <div className="text-5xl mb-2">🦋</div>
+                <p className="text-xs text-muted-foreground font-medium">Трансформация</p>
+              </div>
+            </div>
+            
             <div className="grid md:grid-cols-4 gap-6">
               {[
-                { num: "1", title: "Запись", desc: "Оставьте заявку удобным способом" },
-                { num: "2", title: "Первая сессия", desc: "Знакомство и диагностика запроса" },
-                { num: "3", title: "Курс терапии", desc: "Системная работа по плану" },
-                { num: "4", title: "Результат", desc: "Достижение желаемых изменений" }
+                { num: "1", title: "Запись", desc: "Оставьте заявку удобным способом", emoji: "📝" },
+                { num: "2", title: "Первая сессия", desc: "Знакомство и диагностика запроса", emoji: "🤝" },
+                { num: "3", title: "Курс терапии", desc: "Системная работа по плану", emoji: "🌱" },
+                { num: "4", title: "Результат", desc: "Достижение желаемых изменений", emoji: "✨" }
               ].map((step, index) => (
                 <div key={index} className="text-center space-y-3 animate-fade-in">
-                  <div className="w-16 h-16 mx-auto bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                    {step.num}
+                  <div className="w-16 h-16 mx-auto bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg">
+                    {step.emoji}
                   </div>
                   <h3 className="font-semibold text-primary">{step.title}</h3>
                   <p className="text-sm text-muted-foreground">{step.desc}</p>
