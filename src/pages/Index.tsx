@@ -57,11 +57,11 @@ const Index = () => {
       <section id="home" className="pt-32 pb-20 px-4 md:px-6 relative">
         <div className="container mx-auto">
           {/* Hero metamorphosis illustration */}
-          <div className="relative flex justify-center items-center mb-12 max-w-2xl mx-auto">
+          <div className="relative w-full mb-0 -mt-8">
             <img 
               src="https://cdn.poehali.dev/files/4011afd5-d1a7-44e8-8f74-6c1fb26b741f.jpg"
               alt="Метаморфоза: гусеница, кокон, бабочка"
-              className="w-full h-auto opacity-90"
+              className="w-full h-24 object-cover object-center opacity-90"
             />
           </div>
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
