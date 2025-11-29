@@ -63,12 +63,21 @@ const Index = () => {
       <section id="home" className="pt-32 pb-20 px-6 relative">
         <div className="container mx-auto">
           {/* Hero metamorphosis illustration */}
-          <div className="flex justify-center mb-12 animate-fade-in">
-            <img 
-              src="https://cdn.poehali.dev/projects/669710ca-3a7c-4e6d-bbf6-6df17776da53/files/6b0354e9-3f73-496c-9f6e-d2cc2d79fd42.jpg" 
-              alt="Путь трансформации"
-              className="w-full max-w-2xl h-auto opacity-80"
-            />
+          <div className="relative flex justify-between items-center mb-12 animate-fade-in max-w-6xl mx-auto" style={{height: '200px'}}>
+            <div className="w-1/4 flex justify-start">
+              <div className="text-9xl opacity-70">🐛</div>
+            </div>
+            <div className="w-2/4 flex justify-center">
+              <img 
+                src="https://cdn.poehali.dev/projects/669710ca-3a7c-4e6d-bbf6-6df17776da53/files/d67868e0-d827-473b-a7ec-4c6958928b41.jpg" 
+                alt="Кокон"
+                className="h-48 w-auto object-contain opacity-80"
+              />
+            </div>
+            <div className="w-1/4 flex justify-end">
+              <div className="text-9xl opacity-70 animate-butterfly">🦋</div>
+            </div>
+            <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-accent/30 via-primary/30 to-accent/30 -z-10"></div>
           </div>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
