@@ -88,8 +88,12 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
         html_part = MIMEText(html_content, 'html', 'utf-8')
         msg.attach(html_part)
         
-        server = smtplib.SMTP(smtp_host, smtp_port)
-        server.starttls()
+        if smtp_port == 465:
+            server = smtplib.SMTP_SSL(smtp_host, smtp_port, timeout=10)
+        else:
+            server = smtplib.SMTP(smtp_host, smtp_port, timeout=10)
+            server.starttls()
+        
         server.login(smtp_user, smtp_password)
         server.sendmail(smtp_user, recipients, msg.as_string())
         server.quit()
