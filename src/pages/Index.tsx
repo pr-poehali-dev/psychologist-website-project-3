@@ -60,10 +60,10 @@ const Index = () => {
             <div className="space-y-6 animate-fade-in">
               <div className="flex items-center gap-6">
                 <div>
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
+                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary leading-tight">
                     Авшалом Елена
                   </h1>
-                  <Badge variant="secondary" className="text-sm px-4 py-1 w-fit mt-2">
+                  <Badge variant="secondary" className="text-xs px-3 py-0.5 w-fit mt-1.5">
                     Кандидат психологических наук
                   </Badge>
                 </div>
@@ -71,7 +71,7 @@ const Index = () => {
                 <img 
                   src="https://cdn.poehali.dev/files/4011afd5-d1a7-44e8-8f74-6c1fb26b741f.jpg"
                   alt="Метаморфоза: гусеница, кокон, бабочка"
-                  className="w-64 h-auto opacity-80"
+                  className="w-48 h-auto opacity-80"
                 />
               </div>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
