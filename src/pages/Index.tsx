@@ -59,18 +59,18 @@ const Index = () => {
           {/* Hero metamorphosis illustration */}
           <div className="relative flex justify-between items-center mb-12 animate-fade-in max-w-6xl mx-auto" style={{height: '200px'}}>
             <div className="w-1/4 flex justify-start">
-              <svg className="w-32 h-32 text-accent caterpillar-crawl" viewBox="0 0 120 60" fill="none" stroke="currentColor" strokeWidth="1.5" style={{transform: 'scaleX(-1)'}}>
-                <circle cx="15" cy="30" r="8" strokeWidth="1.2"/>
-                <circle cx="30" cy="30" r="9" strokeWidth="1.2"/>
-                <circle cx="47" cy="30" r="10" strokeWidth="1.2"/>
-                <circle cx="65" cy="30" r="10" strokeWidth="1.2"/>
-                <circle cx="83" cy="30" r="9" strokeWidth="1.2"/>
+              <svg className="w-32 h-32 text-accent caterpillar-crawl" viewBox="0 0 120 60" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <circle cx="98" cy="30" r="8" strokeWidth="1.2"/>
-                <line x1="10" y1="22" x2="8" y2="15" strokeWidth="1"/>
-                <line x1="20" y1="22" x2="18" y2="15" strokeWidth="1"/>
-                <circle cx="12" cy="27" r="1.5" fill="currentColor"/>
-                <circle cx="18" cy="27" r="1.5" fill="currentColor"/>
-                <path d="M 10 33 Q 15 36 20 33" strokeWidth="1" fill="none"/>
+                <circle cx="83" cy="30" r="9" strokeWidth="1.2"/>
+                <circle cx="65" cy="30" r="10" strokeWidth="1.2"/>
+                <circle cx="47" cy="30" r="10" strokeWidth="1.2"/>
+                <circle cx="30" cy="30" r="9" strokeWidth="1.2"/>
+                <circle cx="15" cy="30" r="8" strokeWidth="1.2"/>
+                <line x1="103" y1="22" x2="105" y2="15" strokeWidth="1"/>
+                <line x1="93" y1="22" x2="91" y2="15" strokeWidth="1"/>
+                <circle cx="101" cy="27" r="1.5" fill="currentColor"/>
+                <circle cx="95" cy="27" r="1.5" fill="currentColor"/>
+                <path d="M 103 33 Q 98 36 93 33" strokeWidth="1" fill="none"/>
               </svg>
             </div>
             <div className="w-2/4 flex justify-center">
