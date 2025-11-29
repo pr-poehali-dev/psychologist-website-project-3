@@ -58,7 +58,7 @@ const Index = () => {
         <div className="container mx-auto">
           {/* Hero metamorphosis illustration */}
           <div className="relative flex justify-between items-center mb-12 animate-fade-in max-w-6xl mx-auto" style={{height: '200px'}}>
-            <div className="w-1/4 flex justify-start">
+            <div className="w-1/4 flex justify-start pl-8">
               <svg className="w-32 h-32 text-accent caterpillar-crawl" viewBox="0 0 120 60" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <circle cx="98" cy="30" r="8" strokeWidth="1.2"/>
                 <circle cx="83" cy="30" r="9" strokeWidth="1.2"/>
@@ -88,7 +88,7 @@ const Index = () => {
                 <ellipse cx="40" cy="160" rx="8" ry="12" strokeWidth="0.8" opacity="0.4"/>
               </svg>
             </div>
-            <div className="w-1/4 flex justify-end">
+            <div className="w-1/4 flex justify-end pr-8">
               <svg className="butterfly-fly-grow" viewBox="0 0 100 100" fill="none" stroke="#8B5CF6" strokeWidth="1">
                 <ellipse cx="50" cy="50" rx="2" ry="15" fill="#8B5CF6"/>
                 <line x1="50" y1="35" x2="48" y2="28" strokeWidth="1" stroke="#8B5CF6"/>
